@@ -26,6 +26,8 @@ public class LOgin {
 		capability.setCapability("ignoreZoomSetting", true);			
 		//System.out.println("capability::::"+capability);
 		System.setProperty("webdriver.ie.driver","C:\\src\\test\\resources\\IEDriverServer.exe");
+		System.out.println("C:\\src\\test\\resources\\IEDriverServer.exe");
+		Thread.sleep(5000);
 		driver=new InternetExplorerDriver(capability);		
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		driver.navigate().to("http://www.google.com");
