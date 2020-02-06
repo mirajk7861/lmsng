@@ -25,7 +25,7 @@ public class LOgin {
 		capability.setCapability("requireWindowFocus", true);
 		capability.setCapability("ignoreZoomSetting", true);			
 		//System.out.println("capability::::"+capability);
-		System.setProperty("webdriver.ie.driver","\\src\\test\\resources\\IEDriverServer.exe");
+		System.setProperty("webdriver.ie.driver","C:\\src\\test\\resources\\IEDriverServer.exe");
 		driver=new InternetExplorerDriver(capability);		
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		driver.navigate().to("http://www.google.com");
