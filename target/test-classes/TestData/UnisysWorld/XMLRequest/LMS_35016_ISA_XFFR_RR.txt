@@ -1,0 +1,125 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:lms="http://www.unisys.com/transportation/lms">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <lms:Service>
+         <ServiceName>XFFR</ServiceName>
+         <Payload>
+            <rsm:BookingRequest xsi:schemaLocation="iata:bookingrequest:1 BookingRequest_1.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:rsm="iata:bookingrequest:1" xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2" xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:8" xmlns:ram="iata:datamodel:3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+               <rsm:MessageHeaderDocument>
+                  <ram:ID>NEW</ram:ID>
+                  <ram:PurposeCode>creation</ram:PurposeCode>
+                  <ram:Name>Booking Request</ram:Name>
+                  <ram:SenderParty>
+                     <ram:PrimaryID schemeID="A">DELTACARGOCOM</ram:PrimaryID>
+                  </ram:SenderParty>
+               </rsm:MessageHeaderDocument>
+               <rsm:BusinessHeaderDocument>
+                  <ram:ID>NEW</ram:ID>
+               </rsm:BusinessHeaderDocument>
+               <rsm:MasterConsignment>
+                  <ram:ID>NEW</ram:ID>
+                  <ram:AdditionalID>Additionalid</ram:AdditionalID>
+                  <ram:IncludedTareGrossWeightMeasure unitCode="LBR">500</ram:IncludedTareGrossWeightMeasure>
+                  <ShipmentTypeCode>T</ShipmentTypeCode>
+                  <PackageQuantity>28</PackageQuantity>
+                  <ram:GrossVolumeMeasure unitCode="CMT">1000000</ram:GrossVolumeMeasure>
+                  <ram:TotalPieceQuantity>28</ram:TotalPieceQuantity>
+                  <ram:ProductID>DIM</ram:ProductID>
+                  <ram:SummaryDescription>Automation</ram:SummaryDescription>
+                  <ram:ConsigneeParty>
+                     <ram:Name>UNI EXPRESS</ram:Name>
+                     <ram:AccountID>0230016049</ram:AccountID>
+                     <ram:PostalStructuredAddress>
+                        <ram:PostcodeCode/>
+                        <ram:StreetName>9 AIRLINE RD 01-26 CGO AGTS BLDG D</ram:StreetName>
+                        <ram:CityName>SINGAPORE</ram:CityName>
+                        <ram:CountryID>SG</ram:CountryID>
+                        <ram:CountrySubDivisionID>IL</ram:CountrySubDivisionID>
+                        <ram:CityID>SIN</ram:CityID>
+                     </ram:PostalStructuredAddress>
+                  </ram:ConsigneeParty>
+                  <ram:RequestorParty>
+                     <ram:Name>UNI EXPRESS</ram:Name>
+                     <ram:RoleCode>A</ram:RoleCode>
+                     <ram:AccountID>0230016049</ram:AccountID>
+                     <ram:PostalStructuredAddress>
+                        <ram:PostcodeCode/>
+                        <ram:StreetName>9 AIRLINE RD 01-26 CGO AGTS BLDG D</ram:StreetName>
+                        <ram:CityName>SINGAPORE</ram:CityName>
+                        <ram:CountryID>SG</ram:CountryID>
+                        <ram:CountrySubDivisionID>IL</ram:CountrySubDivisionID>
+                        <ram:CityID>SIN</ram:CityID>
+                     </ram:PostalStructuredAddress>
+                  </ram:RequestorParty>
+                  <ram:OriginLocation>
+                     <ram:ID>FRA</ram:ID>
+                  </ram:OriginLocation>
+                  <ram:FinalDestinationLocation>
+                     <ram:ID>ORD</ram:ID>
+                  </ram:FinalDestinationLocation>
+                  <ram:SpecifiedLogisticsTransportMovement>
+                     <ram:ID>DL7660P</ram:ID>
+                     <ram:SequenceNumeric>1</ram:SequenceNumeric>
+                     <ram:SpaceAllocationCode>HN</ram:SpaceAllocationCode>
+                     <ram:ArrivalEvent>
+                        <ram:ScheduledOccurrenceDateTime>2018-06-20T05:00:00</ram:ScheduledOccurrenceDateTime>
+                        <ram:OccurrenceArrivalLocation>
+                           <ram:ID>LAX</ram:ID>
+                           <ram:TypeCode>DL</ram:TypeCode>
+                        </ram:OccurrenceArrivalLocation>
+                     </ram:ArrivalEvent>
+                     <ram:DepartureEvent>
+                        <ram:ScheduledOccurrenceDateTime>2018-06-20T05:00:00</ram:ScheduledOccurrenceDateTime>
+                        <ram:OccurrenceDepartureLocation>
+                           <ram:ID>FRA</ram:ID>
+                           <ram:TypeCode>DL</ram:TypeCode>
+                        </ram:OccurrenceDepartureLocation>
+                     </ram:DepartureEvent>
+                  </ram:SpecifiedLogisticsTransportMovement>
+                  <ram:SpecifiedLogisticsTransportMovement>
+                     <ram:ID>DL1187U</ram:ID>
+                     <ram:SequenceNumeric>1</ram:SequenceNumeric>
+                     <ram:SpaceAllocationCode>HN</ram:SpaceAllocationCode>
+                     <!--<ram:AllotmentID>BKGALLOTMENT</ram:AllotmentID>-->
+                     <ram:ArrivalEvent>
+                        <ram:ScheduledOccurrenceDateTime>2018-06-21T05:00:00</ram:ScheduledOccurrenceDateTime>
+                        <ram:OccurrenceArrivalLocation>
+                           <ram:ID>ORD</ram:ID>
+                           <ram:TypeCode>DL</ram:TypeCode>
+                        </ram:OccurrenceArrivalLocation>
+                     </ram:ArrivalEvent>
+                     <ram:DepartureEvent>
+                        <ram:ScheduledOccurrenceDateTime>2018-06-21T05:00:00</ram:ScheduledOccurrenceDateTime>
+                        <ram:OccurrenceDepartureLocation>
+                           <ram:ID>LAX</ram:ID>
+                           <ram:TypeCode>DL</ram:TypeCode>
+                        </ram:OccurrenceDepartureLocation>
+                     </ram:DepartureEvent>
+                  </ram:SpecifiedLogisticsTransportMovement>
+                  <ram:HandlingSSRInstructions>
+                     <ram:Description>DTF</ram:Description>
+                  </ram:HandlingSSRInstructions>
+                  <ram:HandlingOSIInstructions>
+                     <ram:Description>ABB</ram:Description>
+                  </ram:HandlingOSIInstructions>
+                  <ram:AssociatedReferenceDocument>
+                     <ram:ID>87578455</ram:ID>
+                  </ram:AssociatedReferenceDocument>
+                  <ram:AssociatedConsignmentCustomsProcedure>
+                     <ram:GoodsStatusCode>T1</ram:GoodsStatusCode>
+                  </ram:AssociatedConsignmentCustomsProcedure>
+                  <ram:IncludedMasterConsignmentItem>
+                     <ram:TypeCode listAgencyID="1">Description</ram:TypeCode>
+                     <ram:GrossWeightMeasure unitCode="LBR">2</ram:GrossWeightMeasure>
+                     <ram:PieceQuantity>2</ram:PieceQuantity>
+                     <ram:ApplicableFreightRateServiceCharge>
+                        <ram:CategoryCode>Q</ram:CategoryCode>
+                        <ram:CommodityItemID/>
+                     </ram:ApplicableFreightRateServiceCharge>
+                  </ram:IncludedMasterConsignmentItem>
+               </rsm:MasterConsignment>
+            </rsm:BookingRequest>
+         </Payload>
+      </lms:Service>
+   </soapenv:Body>
+</soapenv:Envelope>

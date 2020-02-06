@@ -1,0 +1,2 @@
+Action,Account,Account ID,Contract Definition,Charge Code,Subcode,Origin,Destination,Product,Commodity,ULD Type,Amount,Currency,KG/LB,Weight Type,Minimum,Maximum,Payment Type,Participant Type,Priority,Effective Date,Expiration Date,Other Charge Contract ID
+D,*ALL,,BU,HI,,*ALL,*ALL,*ALL,,,10,USD,K,G,,,E,"A,S,P,C,R",5,20-Sep-19,,

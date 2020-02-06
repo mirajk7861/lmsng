@@ -1,0 +1,133 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:lms="http://www.unisys.com/transportation/lms">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <lms:Service>
+         <ServiceName>XFFR</ServiceName>
+         <Payload>
+            <rsm:BookingRequest xsi:schemaLocation="iata:bookingrequest:1 BookingRequest_1.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:rsm="iata:bookingrequest:1" xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2" xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:8" xmlns:ram="iata:datamodel:3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+               <rsm:MessageHeaderDocument>
+                  <ram:ID>NEW</ram:ID>
+                  <ram:PurposeCode>creation</ram:PurposeCode>
+                  <ram:Name>Booking Request</ram:Name>
+                  <ram:SenderParty>
+                     <ram:PrimaryID schemeID="A">DELTACARGOCOM</ram:PrimaryID>
+                  </ram:SenderParty>
+               </rsm:MessageHeaderDocument>
+               <rsm:BusinessHeaderDocument>
+                  <ram:ID>NEW</ram:ID>
+               </rsm:BusinessHeaderDocument>
+               <rsm:MasterConsignment>
+                  <ram:ID>NEW</ram:ID>
+                  <ram:AdditionalID>NEW</ram:AdditionalID>
+                  <ram:IncludedTareGrossWeightMeasure unitCode="KGM">10</ram:IncludedTareGrossWeightMeasure>
+                  <ShipmentTypeCode>T</ShipmentTypeCode>
+                  <PackageQuantity>28</PackageQuantity>
+                  <ram:GrossVolumeMeasure unitCode="MTQ">10</ram:GrossVolumeMeasure>
+                  <ram:TotalPieceQuantity>28</ram:TotalPieceQuantity>
+                  <ram:ProductID>XPS</ram:ProductID>
+                  <ram:SummaryDescription>DESCRIPTONS test</ram:SummaryDescription>
+                  <ram:ConsignorParty>
+                     <ram:Name>AGENT INFOSKY SC 15</ram:Name>
+                     <ram:AccountID>0230050052</ram:AccountID>
+                     <ram:PostalStructuredAddress>
+                        <ram:PostcodeCode>98710</ram:PostcodeCode>
+                        <ram:StreetName>3282 VEERALADEN RD</ram:StreetName>
+                        <ram:CityName>CHENGDU</ram:CityName>
+                        <ram:CountryID>CN</ram:CountryID>
+                        <ram:CityID>CTU</ram:CityID>
+                     </ram:PostalStructuredAddress>
+                     <ram:DefinedTradeContact>
+                        <ram:DirectTelephoneCommunication>
+                           <ram:CompleteNumber>987654321</ram:CompleteNumber>
+                        </ram:DirectTelephoneCommunication>
+                        <ram:FaxCommunication>
+                           <ram:CompleteNumber>8979675641</ram:CompleteNumber>
+                        </ram:FaxCommunication>
+                        <ram:URIEmailCommunication>
+                           <ram:URIID>shama.wahab@in.unisys.com</ram:URIID>
+                        </ram:URIEmailCommunication>
+                     </ram:DefinedTradeContact>
+                  </ram:ConsignorParty>
+                  <ram:ConsigneeParty>
+                     <ram:Name>ABBAS POODLES OF NEW ENGLAND LLC</ram:Name>
+                     <ram:AccountID>0230050052</ram:AccountID>
+                     <ram:PostalStructuredAddress>
+                        <ram:StreetName>61 NORTHROP ROAD</ram:StreetName>
+                        <ram:CityName>WEST HAVEN</ram:CityName>
+                        <ram:CountryID>US</ram:CountryID>
+                        <ram:PostcodeCode>1234</ram:PostcodeCode>
+                        <ram:CountrySubDivisionID>IL</ram:CountrySubDivisionID>
+                        <ram:CityID>LGA</ram:CityID>
+                     </ram:PostalStructuredAddress>
+                  </ram:ConsigneeParty>
+                  <ram:OriginLocation>
+                     <ram:ID>ATL</ram:ID>
+                  </ram:OriginLocation>
+                  <ram:FinalDestinationLocation>
+                     <ram:ID>LAX</ram:ID>
+                  </ram:FinalDestinationLocation>
+                  <ram:SpecifiedLogisticsTransportMovement>
+                     <ram:ID>DL9989J</ram:ID>
+                     <ram:SequenceNumeric>1</ram:SequenceNumeric>
+                     <ram:SpaceAllocationCode>KK</ram:SpaceAllocationCode>
+                     <ram:ArrivalEvent>
+                        <ram:ScheduledOccurrenceDateTime>2018-07-06T05:00:00</ram:ScheduledOccurrenceDateTime>
+                        <ram:OccurrenceArrivalLocation>
+                           <ram:ID>LAX</ram:ID>
+                           <ram:TypeCode>DL</ram:TypeCode>
+                        </ram:OccurrenceArrivalLocation>
+                     </ram:ArrivalEvent>
+                     <ram:DepartureEvent>
+                        <ram:ScheduledOccurrenceDateTime>2018-07-06T05:00:00</ram:ScheduledOccurrenceDateTime>
+                        <ram:OccurrenceDepartureLocation>
+                           <ram:ID>ATL</ram:ID>
+                           <ram:TypeCode>DL</ram:TypeCode>
+                        </ram:OccurrenceDepartureLocation>
+                     </ram:DepartureEvent>
+                  </ram:SpecifiedLogisticsTransportMovement>
+                  <ram:SpecifiedLogisticsTransportMovement>
+                     <ram:ID>AF250M</ram:ID>
+                     <ram:SequenceNumeric>1</ram:SequenceNumeric>
+                     <ram:SpaceAllocationCode>HN</ram:SpaceAllocationCode>
+                     <ram:ArrivalEvent>
+                        <ram:ScheduledOccurrenceDateTime> T05:00:00</ram:ScheduledOccurrenceDateTime>
+                        <ram:OccurrenceArrivalLocation>
+                           <ram:ID>FRA</ram:ID>
+                           <ram:TypeCode>DL</ram:TypeCode>
+                        </ram:OccurrenceArrivalLocation>
+                     </ram:ArrivalEvent>
+                     <ram:DepartureEvent>
+                        <ram:ScheduledOccurrenceDateTime> T05:00:00</ram:ScheduledOccurrenceDateTime>
+                        <ram:OccurrenceDepartureLocation>
+                           <ram:ID>CDG</ram:ID>
+                           <ram:TypeCode>DL</ram:TypeCode>
+                        </ram:OccurrenceDepartureLocation>
+                     </ram:DepartureEvent>
+                  </ram:SpecifiedLogisticsTransportMovement>
+                  <ram:HandlingSSRInstructions>
+                     <ram:Description>DTF</ram:Description>
+                  </ram:HandlingSSRInstructions>
+                  <ram:HandlingOSIInstructions>
+                     <ram:Description>ABB</ram:Description>
+                  </ram:HandlingOSIInstructions>
+                  <ram:AssociatedReferenceDocument>
+                     <ram:ID>87578455</ram:ID>
+                  </ram:AssociatedReferenceDocument>
+                  <ram:AssociatedConsignmentCustomsProcedure>
+                     <ram:GoodsStatusCode>T1</ram:GoodsStatusCode>
+                  </ram:AssociatedConsignmentCustomsProcedure>
+                  <ram:IncludedMasterConsignmentItem>
+                     <ram:TypeCode listAgencyID="1">Description</ram:TypeCode>
+                     <ram:GrossWeightMeasure unitCode="KG">10</ram:GrossWeightMeasure>
+                     <ram:PieceQuantity>28</ram:PieceQuantity>
+                     <ram:ApplicableFreightRateServiceCharge>
+                        <ram:CategoryCode>Q</ram:CategoryCode>
+                        <ram:CommodityItemID/>
+                     </ram:ApplicableFreightRateServiceCharge>
+                  </ram:IncludedMasterConsignmentItem>
+               </rsm:MasterConsignment>
+            </rsm:BookingRequest>
+         </Payload>
+      </lms:Service>
+   </soapenv:Body>
+</soapenv:Envelope>

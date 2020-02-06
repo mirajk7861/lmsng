@@ -1,0 +1,107 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:lms="http://www.unisys.com/transportation/lms">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <lms:Service>
+         <ServiceName>AirwaybillIATA</ServiceName>
+         <Payload>
+            <ns2:Waybill xmlns="iata:datamodel:3" xmlns:ns2="iata:waybill:1">
+               <ns2:MessageHeaderDocument>
+                  <ID>ATL</ID>
+                  <Name>AirWaybill</Name>
+                  <TypeCode>740</TypeCode>
+                  <IssueDateTime>2019-07-01T19:37:23.706-04:00</IssueDateTime>
+                  <PurposeCode>Creation</PurposeCode>
+                  <VersionID>2.0</VersionID>
+                  <ConversationID/>
+                  <SenderParty>
+                     <PrimaryID schemeID="1">FORWARDER01</PrimaryID>
+                  </SenderParty>
+                  <RecipientParty>
+                     <PrimaryID schemeID="1">FORWARDER01</PrimaryID>
+                  </RecipientParty>
+               </ns2:MessageHeaderDocument>
+               <ns2:BusinessHeaderDocument>
+                  <ID>NEW</ID>
+                  <SenderAssignedID>DCA10</SenderAssignedID>
+                  <IncludedHeaderNote>
+                     <ContentCode>CONTENT</ContentCode>
+                     <Content>A</Content>
+                  </IncludedHeaderNote>
+                  <SignatoryConsignorAuthentication>
+                     <Signatory/>
+                  </SignatoryConsignorAuthentication>
+                  <SignatoryCarrierAuthentication>
+                     <ActualDateTime>2019-07-01T19:37:23.551-04:00</ActualDateTime>
+                     <Signatory/>
+                     <IssueAuthenticationLocation>
+                        <Name>ATL</Name>
+                     </IssueAuthenticationLocation>
+                  </SignatoryCarrierAuthentication>
+               </ns2:BusinessHeaderDocument>
+               <ns2:MasterConsignment>
+                  <NilCarriageValueIndicator>false</NilCarriageValueIndicator>
+                  <DeclaredValueForCarriageAmount currencyID="USD">1.0</DeclaredValueForCarriageAmount>
+                  <NilCustomsValueIndicator>false</NilCustomsValueIndicator>
+                  <DeclaredValueForCustomsAmount currencyID="USD">1.0</DeclaredValueForCustomsAmount>
+                  <NilInsuranceValueIndicator>true</NilInsuranceValueIndicator>
+                  <TotalChargePrepaidIndicator>true</TotalChargePrepaidIndicator>
+                  <WeightTotalChargeAmount>0</WeightTotalChargeAmount>
+                  <TotalDisbursementPrepaidIndicator>true</TotalDisbursementPrepaidIndicator>
+                  <IncludedTareGrossWeightMeasure unitCode="LBR">800</IncludedTareGrossWeightMeasure>
+                  <TotalPieceQuantity>80</TotalPieceQuantity>
+                  <ProductID>AML</ProductID>
+                  <ConsignorParty>
+                     <Name>APPLIED INDUSTRIAL TECHNOLOGIES</Name>
+                     <AccountID>0230003240</AccountID>
+                     <PostalStructuredAddress>
+                        <PostcodeCode>30320</PostcodeCode>
+                        <StreetName>INTERNATIONAL COMAT ONLY</StreetName>
+                        <CityName>ATLANTA</CityName>
+                        <CountryID>US</CountryID>
+                        <CountrySubDivisionID>GA</CountrySubDivisionID>
+                     </PostalStructuredAddress>
+                  </ConsignorParty>
+                  <ConsigneeParty>
+                     <Name> DELTA AIR LINES </Name>
+                     <AccountID>215597014</AccountID>
+                     <PostalStructuredAddress>
+                        <PostcodeCode>30320</PostcodeCode>
+                        <StreetName> INTERNATIONAL COMAT ONLY</StreetName>
+                        <CityName> ATLANTA</CityName>
+                        <CountryID>US</CountryID>
+                        <CountrySubDivisionID>GA</CountrySubDivisionID>
+                     </PostalStructuredAddress>
+                  </ConsigneeParty>
+                  <OriginLocation>
+                     <ID>ATL</ID>
+                  </OriginLocation>
+                  <FinalDestinationLocation>
+                     <ID>MSP</ID>
+                  </FinalDestinationLocation>
+                  <HandlingSSRInstructions>
+                     <Description>TYSTEM PARTS</Description>
+                  </HandlingSSRInstructions>
+                  <ApplicableOriginCurrencyExchange>
+                     <SourceCurrencyCode>USD</SourceCurrencyCode>
+                  </ApplicableOriginCurrencyExchange>
+                  <IncludedMasterConsignmentItem>
+                     <SequenceNumeric>1</SequenceNumeric>
+                     <GrossWeightMeasure unitCode="LBR">800</GrossWeightMeasure>
+                     <PackageQuantity>0</PackageQuantity>
+                     <PieceQuantity>80</PieceQuantity>
+                     <NatureIdentificationTransportCargo>
+                        <Identification>LMS PARTS</Identification>
+                     </NatureIdentificationTransportCargo>
+                     <ApplicableFreightRateServiceCharge>
+                        <CategoryCode>M</CategoryCode>
+                        <ChargeableWeightMeasure unitCode="LBR">1</ChargeableWeightMeasure>
+                        <AppliedRate>1</AppliedRate>
+                        <AppliedAmount>100</AppliedAmount>
+                     </ApplicableFreightRateServiceCharge>
+                  </IncludedMasterConsignmentItem>
+               </ns2:MasterConsignment>
+            </ns2:Waybill>
+         </Payload>
+      </lms:Service>
+   </soapenv:Body>
+</soapenv:Envelope>

@@ -1,0 +1,1 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><soap:Fault><faultcode>soap:VersionMismatch</faultcode><faultstring>No namespace on "REQUEST" element. You must send a SOAP request.</faultstring></soap:Fault></soap:Body></soap:Envelope>

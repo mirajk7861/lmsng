@@ -1,0 +1,23 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:lms="http://www.unisys.com/transportation/lms">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <lms:Service>
+         <ServiceName>XFFR</ServiceName>
+         <Payload>
+            <rsm:BookingRequest xsi:schemaLocation="iata:bookingrequest:1 BookingRequest_1.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:rsm="iata:bookingrequest:1" xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2" xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:8" xmlns:ram="iata:datamodel:3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+               <rsm:MessageHeaderDocument>
+                 <ram:Name>Booking Request</ram:Name>
+                  <ram:PurposeCode>Retrieve</ram:PurposeCode>
+                   <ram:SenderParty>
+                     <ram:PrimaryID schemeID="A">FORWARDER01</ram:PrimaryID>
+                  </ram:SenderParty>
+               </rsm:MessageHeaderDocument>
+               <rsm:BusinessHeaderDocument>
+                  <ram:ID>0AB-99917521</ram:ID>
+               </rsm:BusinessHeaderDocument>
+               <rsm:MasterConsignment></rsm:MasterConsignment>
+            </rsm:BookingRequest>
+         </Payload>
+      </lms:Service>
+   </soapenv:Body>
+</soapenv:Envelope>

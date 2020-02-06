@@ -1,0 +1,92 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:lms="http://www.unisys.com/transportation/lms">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <lms:Service>
+         <ServiceName>XFFR</ServiceName>
+         <Payload>
+            <rsm:BookingRequest xsi:schemaLocation="iata:bookingrequest:1 BookingRequest_1.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:rsm="iata:bookingrequest:1" xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2" xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:8" xmlns:ram="iata:datamodel:3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+              <rsm:MessageHeaderDocument>
+                  <ram:ID>NEW</ram:ID>
+                  <ram:PurposeCode>creation</ram:PurposeCode>
+                  <ram:Name>Booking Request</ram:Name>
+                  <ram:SenderParty>
+                     <ram:PrimaryID schemeID="A">DELTACARGOCOM</ram:PrimaryID>
+                  </ram:SenderParty>
+               </rsm:MessageHeaderDocument>
+               <rsm:BusinessHeaderDocument>
+                  <ram:ID>NEW</ram:ID>
+               </rsm:BusinessHeaderDocument>
+               <rsm:MasterConsignment>
+                  <ram:ID>NEW</ram:ID>
+                  <ram:IncludedTareGrossWeightMeasure unitCode="LBR">500</ram:IncludedTareGrossWeightMeasure>
+                  <ram:ShipmentTypeCode>T</ram:ShipmentTypeCode>
+                  <ram:GrossVolumeMeasure unitCode="CMT">1000000</ram:GrossVolumeMeasure>
+                  <ram:PackageQuantity>10</ram:PackageQuantity>
+                  <ram:TotalPieceQuantity>1</ram:TotalPieceQuantity>
+                  <ram:ProductID>DIM</ram:ProductID>
+                  <ram:SummaryDescription>CONSOL</ram:SummaryDescription>
+<ram:ConsignorParty>                     
+                     <ram:AccountID>033015017</ram:AccountID>
+                     <ram:PostalStructuredAddress>
+                        <ram:PostcodeCode>20170</ram:PostcodeCode>
+                        <ram:StreetName>570 HERNDON PARKWAY</ram:StreetName>
+                        <ram:CityName>HERNDON</ram:CityName>
+                        <ram:CountryID>US</ram:CountryID>
+                        <ram:CountrySubDivisionID>VA</ram:CountrySubDivisionID>
+                     </ram:PostalStructuredAddress>
+                  </ram:ConsignorParty>
+                  <ram:ConsigneeParty>
+                     <ram:Name>ABBAS POODLES OF NEW ENGLAND LLC</ram:Name>
+                     <ram:AccountID>0230050052</ram:AccountID>
+                     <ram:PostalStructuredAddress>
+                        <ram:StreetName>61 NORTHROP ROAD</ram:StreetName>
+                        <ram:CityName>WEST HAVEN</ram:CityName>
+                        <ram:CountryID>US</ram:CountryID>
+                        <ram:PostcodeCode>1234</ram:PostcodeCode>
+                                  <ram:CountrySubDivisionID>IL</ram:CountrySubDivisionID>
+                        <ram:CityID>LGA</ram:CityID>
+                     </ram:PostalStructuredAddress>
+                  </ram:ConsigneeParty>
+                  <OriginLocation>
+                     <ID>ATL</ID>
+                  </OriginLocation>
+                  <FinalDestinationLocation>
+                     <ID>AMS</ID>
+                  </FinalDestinationLocation>
+                  <ram:SpecifiedLogisticsTransportMovement>
+                     <ram:ID>DL7489Y</ram:ID>
+                     <ram:SequenceNumeric>1</ram:SequenceNumeric>
+                     <ram:SpaceAllocationCode>NN</ram:SpaceAllocationCode>
+                     <ram:ArrivalEvent>
+                        <ram:ScheduledOccurrenceDateTime>2018-07-06T00:00:00</ram:ScheduledOccurrenceDateTime>
+                        <ram:OccurrenceArrivalLocation>
+                           <ram:ID>AMS</ram:ID>
+                           <ram:TypeCode>DL</ram:TypeCode>
+                        </ram:OccurrenceArrivalLocation>
+                     </ram:ArrivalEvent>
+                     <ram:DepartureEvent>
+                        <ram:ScheduledOccurrenceDateTime>2018-07-06T00:00:00</ram:ScheduledOccurrenceDateTime>
+                        <ram:OccurrenceDepartureLocation>
+                           <ram:ID>ATL</ram:ID>
+                           <ram:TypeCode>DL</ram:TypeCode>
+                        </ram:OccurrenceDepartureLocation>
+                     </ram:DepartureEvent>
+                  </ram:SpecifiedLogisticsTransportMovement>
+                  <ram:AssociatedConsignmentCustomsProcedure>
+                     <ram:GoodsStatusCode>T1</ram:GoodsStatusCode>
+                  </ram:AssociatedConsignmentCustomsProcedure>
+                  <ram:IncludedMasterConsignmentItem>
+                     <ram:TypeCode listAgencyID="1">CONSOL</ram:TypeCode>
+                     <ram:GrossWeightMeasure unitCode="CF">953</ram:GrossWeightMeasure>
+                     <ram:PieceQuantity>1</ram:PieceQuantity>
+                     <ram:ApplicableFreightRateServiceCharge>
+                        <ram:CategoryCode>Q</ram:CategoryCode>
+                        <ram:CommodityItemID/>
+                     </ram:ApplicableFreightRateServiceCharge>
+                  </ram:IncludedMasterConsignmentItem>
+               </rsm:MasterConsignment>
+            </rsm:BookingRequest>
+         </Payload>
+      </lms:Service>
+   </soapenv:Body>
+</soapenv:Envelope>

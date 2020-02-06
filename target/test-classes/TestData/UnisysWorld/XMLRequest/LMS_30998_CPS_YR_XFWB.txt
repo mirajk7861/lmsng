@@ -1,0 +1,163 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:lms="http://www.unisys.com/transportation/lms">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <lms:Service>
+         <!--Optional:-->
+         <ServiceName>AirwaybillIATA</ServiceName>
+         <!--Optional:-->
+         <Payload>
+   
+ <ns2:Waybill xmlns:ns2="iata:waybill:1" xmlns:ns4="urn:un:unece:uncefact:codelist:standard:UNECE:PartyRoleCode:D09A" xmlns:ns3="urn:un:unece:uncefact:codelist:standard:UNECE:DocumentNameCode:D09A" xmlns:ns9="urn:un:unece:uncefact:codelist:standard:6:0133:40106" xmlns:ns12="urn:un:unece:uncefact:codelist:standard:IANA:CharacterSetCode:2007-05-14" xmlns:ns5="urn:un:unece:uncefact:codelist:standard:UNECE:TransportModeCode:2" xmlns:ns13="iata:datamodel:3" xmlns:ns6="urn:un:unece:uncefact:codelist:standard:6:3055:D09A" xmlns:ns10="urn:un:unece:uncefact:codelist:standard:6:Recommendation20:6" xmlns:ns7="urn:un:unece:uncefact:codelist:standard:5:ISO42173A:2009-09-09" xmlns:ns11="urn:un:unece:uncefact:codelist:standard:IANA:MIMEMediaType:2009-09-01" xmlns:ns8="urn:un:unece:uncefact:identifierlist:standard:5:ISO316612A:SecondEdition2006VI-6">
+ <ns2:MessageHeaderDocument>
+  <ns13:ID>a88c7b3cde494160a4d2fe3742d5d387</ns13:ID>
+  <ns13:Name>Waybill</ns13:Name>
+  <ns13:TypeCode listVersionID="D09A" listAgencyID="6" listID="1001">740</ns13:TypeCode>
+  <ns13:IssueDateTime>43651T14:47:59</ns13:IssueDateTime>
+  <ns13:PurposeCode>Creation</ns13:PurposeCode>
+  <ns13:VersionID>1.1</ns13:VersionID>
+  <ns13:SenderParty>
+   <ns13:PrimaryID>DHLGLOBALFOR01</ns13:PrimaryID>
+   <ns13:AssociatedServiceProviderParty>
+    <ns13:PrimaryID>DSG</ns13:PrimaryID>
+   </ns13:AssociatedServiceProviderParty>
+  </ns13:SenderParty>
+  <ns13:RecipientParty>
+   <ns13:PrimaryID>TDVCCS00CCSTDV</ns13:PrimaryID>
+  </ns13:RecipientParty>
+ </ns2:MessageHeaderDocument>
+ <ns2:BusinessHeaderDocument>
+  <ns13:ID>00695132811</ns13:ID>
+  <ns13:SenderAssignedID>ATL344557</ns13:SenderAssignedID>
+  <ns13:SignatoryConsignorAuthentication>
+   <ns13:Signatory>ON BEHALF OF DGF</ns13:Signatory>
+  </ns13:SignatoryConsignorAuthentication>
+  <ns13:SignatoryCarrierAuthentication>
+   <ns13:ActualDateTime>43651T00:00:00</ns13:ActualDateTime>
+   <ns13:Signatory>DHL GLOBAL FWD</ns13:Signatory>
+   <ns13:IssueAuthenticationLocation>
+    <ns13:Name>ATLANTA GA </ns13:Name>
+   </ns13:IssueAuthenticationLocation>
+  </ns13:SignatoryCarrierAuthentication>
+ </ns2:BusinessHeaderDocument>
+ <ns2:MasterConsignment>
+  <ns13:AdditionalID></ns13:AdditionalID>
+  <ns13:NilCarriageValueIndicator>true</ns13:NilCarriageValueIndicator>
+  <ns13:NilCustomsValueIndicator>true</ns13:NilCustomsValueIndicator>
+  <ns13:NilInsuranceValueIndicator>true</ns13:NilInsuranceValueIndicator>
+  <ns13:TotalChargePrepaidIndicator>true</ns13:TotalChargePrepaidIndicator>
+  <ns13:WeightTotalChargeAmount>267.90</ns13:WeightTotalChargeAmount>
+  <ns13:TotalDisbursementPrepaidIndicator>true</ns13:TotalDisbursementPrepaidIndicator>
+  <ns13:TotalPrepaidChargeAmount>267.90</ns13:TotalPrepaidChargeAmount>
+  <ns13:IncludedTareGrossWeightMeasure unitCode="KGM">141.0</ns13:IncludedTareGrossWeightMeasure>
+  <ns13:TotalPieceQuantity>1</ns13:TotalPieceQuantity>
+  <ns13:ConsignorParty>
+   <ns13:Name>DHL GLOBAL FORWARDING</ns13:Name>
+   <ns13:PostalStructuredAddress>
+    <ns13:PostcodeCode>30337</ns13:PostcodeCode>
+    <ns13:StreetName>2500A SULLIVAN ROAD</ns13:StreetName>
+    <ns13:CityName>COLLEGE PARK </ns13:CityName>
+    <ns13:CountryID schemeVersionID="second edition 2006">US</ns13:CountryID>
+    <ns13:CountrySubDivisionName>GA</ns13:CountrySubDivisionName>
+    <ns13:CountrySubDivisionID>GA</ns13:CountrySubDivisionID>
+   </ns13:PostalStructuredAddress>
+  </ns13:ConsignorParty>
+  <ns13:ConsigneeParty>
+   <ns13:Name>AEROCAR B.V.</ns13:Name>
+   <ns13:PostalStructuredAddress>
+    <ns13:StreetName>WEG 60</ns13:StreetName>
+    <ns13:CityName>2150 AB NIEUW VEN</ns13:CityName>
+    <ns13:CountryID schemeVersionID="second edition 2006">NL</ns13:CountryID>
+   </ns13:PostalStructuredAddress>
+  </ns13:ConsigneeParty>
+  <ns13:FreightForwarderParty>
+   <ns13:Name>DHL GLOBAL FORWARDING</ns13:Name>
+   <ns13:CargoAgentID>3351595</ns13:CargoAgentID>
+   <ns13:PostalStructuredAddress>
+    <ns13:CityName>ATLANTA GA</ns13:CityName>
+    <ns13:CountryID schemeVersionID="second edition 2006">US</ns13:CountryID>
+   </ns13:PostalStructuredAddress>
+   <ns13:SpecifiedCargoAgentLocation>
+    <ns13:ID>0204</ns13:ID>
+   </ns13:SpecifiedCargoAgentLocation>
+  </ns13:FreightForwarderParty>
+  <ns13:OriginLocation>
+   <ns13:ID>USATL</ns13:ID>
+  </ns13:OriginLocation>
+  <ns13:FinalDestinationLocation>
+   <ns13:ID>NLAMS</ns13:ID>
+  </ns13:FinalDestinationLocation>
+  <ns13:SpecifiedLogisticsTransportMovement>
+   <ns13:StageCode>MainCarriage</ns13:StageCode>
+   <ns13:ID>0074</ns13:ID>
+   <ns13:UsedLogisticsTransportMeans>
+    <ns13:Name>DL</ns13:Name>
+   </ns13:UsedLogisticsTransportMeans>
+   <ns13:ArrivalEvent>
+    <ns13:OccurrenceArrivalLocation>
+     <ns13:ID>AMS</ns13:ID>
+    </ns13:OccurrenceArrivalLocation>
+   </ns13:ArrivalEvent>
+   <ns13:DepartureEvent>
+    <ns13:ScheduledOccurrenceDateTime>43651T00:00:00</ns13:ScheduledOccurrenceDateTime>
+    <ns13:OccurrenceDepartureLocation>
+     <ns13:ID>ATL</ns13:ID>
+    </ns13:OccurrenceDepartureLocation>
+   </ns13:DepartureEvent>
+  </ns13:SpecifiedLogisticsTransportMovement>
+  <ns13:HandlingSPHInstructions>
+   <ns13:DescriptionCode>EAP</ns13:DescriptionCode>
+  </ns13:HandlingSPHInstructions>
+  <ns13:HandlingSSRInstructions>
+   <ns13:Description>SEE INDIVIDUAL BILL</ns13:Description>
+  </ns13:HandlingSSRInstructions>
+  <ns13:HandlingSSRInstructions>
+   <ns13:Description> CARGO SCREENED AT 100</ns13:Description>
+  </ns13:HandlingSSRInstructions>
+  <ns13:IncludedAccountingNote>
+   <ns13:ContentCode>GEN</ns13:ContentCode>
+   <ns13:Content>CONTRACT A008ATLAMS</ns13:Content>
+  </ns13:IncludedAccountingNote>
+  <ns13:IncludedAccountingNote>
+   <ns13:ContentCode>GEN</ns13:ContentCode>
+   <ns13:Content>KNOWN CUSTOMERS</ns13:Content>
+  </ns13:IncludedAccountingNote>
+  <ns13:ApplicableOriginCurrencyExchange>
+   <ns13:SourceCurrencyCode listVersionID="20070618" listAgencyID="5" listID="ISO 4217 3A">USD</ns13:SourceCurrencyCode>
+  </ns13:ApplicableOriginCurrencyExchange>
+  <ns13:ApplicableLogisticsServiceCharge>
+   <ns13:TransportPaymentMethodCode>PP</ns13:TransportPaymentMethodCode>
+  </ns13:ApplicableLogisticsServiceCharge>
+  <ns13:IncludedMasterConsignmentItem>
+   <ns13:SequenceNumeric>1</ns13:SequenceNumeric>
+   <ns13:GrossWeightMeasure unitCode="KGM">141.0</ns13:GrossWeightMeasure>
+   <ns13:TotalChargeAmount>267.9</ns13:TotalChargeAmount>
+   <ns13:PackageQuantity>1</ns13:PackageQuantity>
+   <ns13:PieceQuantity>1</ns13:PieceQuantity>
+   <ns13:Information>NDA</ns13:Information>
+   <ns13:NatureIdentificationTransportCargo>
+    <ns13:Identification>CONSOLIDATED SHIPMENPER ATTACHED MANIFES SLAC1 </ns13:Identification>
+   </ns13:NatureIdentificationTransportCargo>
+   <ns13:TransportLogisticsPackage>
+    <ns13:ItemQuantity>1</ns13:ItemQuantity>
+    <ns13:LinearSpatialDimension>
+     <ns13:WidthMeasure>0</ns13:WidthMeasure>
+     <ns13:LengthMeasure>0</ns13:LengthMeasure>
+     <ns13:HeightMeasure>0</ns13:HeightMeasure>
+    </ns13:LinearSpatialDimension>
+   </ns13:TransportLogisticsPackage>
+   <ns13:ApplicableFreightRateServiceCharge>
+    <ns13:CategoryCode>Q</ns13:CategoryCode>
+    <ns13:ChargeableWeightMeasure>141.0</ns13:ChargeableWeightMeasure>
+    <ns13:AppliedRate>1.90</ns13:AppliedRate>
+    <ns13:AppliedAmount>267.90</ns13:AppliedAmount>
+   </ns13:ApplicableFreightRateServiceCharge>
+   <ns13:SpecifiedRateCombinationPointLocation>
+    <ns13:ID>1</ns13:ID>
+   </ns13:SpecifiedRateCombinationPointLocation>
+  </ns13:IncludedMasterConsignmentItem>
+ </ns2:MasterConsignment>
+</ns2:Waybill>
+</Payload>
+      </lms:Service>
+   </soapenv:Body>
+</soapenv:Envelope>

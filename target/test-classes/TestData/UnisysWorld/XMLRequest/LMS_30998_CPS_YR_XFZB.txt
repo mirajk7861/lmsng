@@ -1,0 +1,160 @@
+<soapenv:Envelope
+ xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+ xmlns:lms="http://www.unisys.com/transportation/lms">
+ <soapenv:Header/>
+ <soapenv:Body>
+  <lms:Service>
+   <!--Optional:-->
+   <ServiceName>RecieveFHL</ServiceName>
+   <!--Optional:-->
+   <Payload>
+    <ns2:HouseWaybill
+     xmlns:ns2="iata:housewaybill:1"
+     xmlns:ns4="urn:un:unece:uncefact:codelist:standard:6:Recommendation20:6"
+     xmlns:ns3="urn:un:unece:uncefact:identifierlist:standard:5:ISO316612A:SecondEdition2006VI-6"
+     xmlns:ns9="urn:un:unece:uncefact:codelist:standard:UNECE:TransportModeCode:2"
+     xmlns:ns12="urn:un:unece:uncefact:codelist:standard:IANA:MIMEMediaType:2009-09-01"
+     xmlns:ns5="urn:un:unece:uncefact:codelist:standard:6:0133:40106"
+     xmlns:ns13="iata:datamodel:3"
+     xmlns:ns6="urn:un:unece:uncefact:codelist:standard:6:3055:D09A"
+     xmlns:ns10="urn:un:unece:uncefact:codelist:standard:IANA:CharacterSetCode:2007-05-14"
+     xmlns:ns7="urn:un:unece:uncefact:codelist:standard:UNECE:DocumentNameCode:D09A"
+     xmlns:ns11="urn:un:unece:uncefact:codelist:standard:5:ISO42173A:2009-09-09"
+     xmlns:ns8="urn:un:unece:uncefact:codelist:standard:UNECE:PartyRoleCode:D09A">
+     <ns2:MessageHeaderDocument>
+      <ns13:ID>8341d9c281e44bd89298ea847586ec1f</ns13:ID>
+      <ns13:Name>HouseWaybill</ns13:Name>
+      <ns13:TypeCode listVersionID="D09A" listAgencyID="6" listID="1001">703</ns13:TypeCode>
+      <ns13:IssueDateTime>43651T16:25:23</ns13:IssueDateTime>
+      <ns13:PurposeCode>Creation</ns13:PurposeCode>
+      <ns13:VersionID>1.1</ns13:VersionID>
+      <ns13:SenderParty>
+       <ns13:PrimaryID>DHLGLOBALFOR01</ns13:PrimaryID>
+       <ns13:AssociatedServiceProviderParty>
+        <ns13:PrimaryID>DSG</ns13:PrimaryID>
+       </ns13:AssociatedServiceProviderParty>
+      </ns13:SenderParty>
+      <ns13:RecipientParty>
+       <ns13:PrimaryID>TDVCCS00CCSTDV</ns13:PrimaryID>
+      </ns13:RecipientParty>
+     </ns2:MessageHeaderDocument>
+     <ns2:BusinessHeaderDocument>
+      <ns13:ID>5MEW195</ns13:ID>
+      <ns13:IncludedHeaderNote>
+       <ns13:ContentCode>2.3.1</ns13:ContentCode>
+       <ns13:Content>006</ns13:Content>
+      </ns13:IncludedHeaderNote>
+      <ns13:IncludedHeaderNote>
+       <ns13:ContentCode>2.3.3</ns13:ContentCode>
+       <ns13:Content>93167874</ns13:Content>
+      </ns13:IncludedHeaderNote>
+      <ns13:IncludedHeaderNote>
+       <ns13:ContentCode>2.4.1</ns13:ContentCode>
+       <ns13:Content>ATL</ns13:Content>
+      </ns13:IncludedHeaderNote>
+      <ns13:IncludedHeaderNote>
+       <ns13:ContentCode>2.4.2</ns13:ContentCode>
+       <ns13:Content>AMS</ns13:Content>
+      </ns13:IncludedHeaderNote>
+      <ns13:IncludedHeaderNote>
+       <ns13:ContentCode>2.5.3</ns13:ContentCode>
+       <ns13:Content>1</ns13:Content>
+      </ns13:IncludedHeaderNote>
+      <ns13:IncludedHeaderNote>
+       <ns13:ContentCode>2.5.4</ns13:ContentCode>
+       <ns13:Content>K</ns13:Content>
+      </ns13:IncludedHeaderNote>
+      <ns13:IncludedHeaderNote>
+       <ns13:ContentCode>2.5.5</ns13:ContentCode>
+       <ns13:Content>141.0</ns13:Content>
+      </ns13:IncludedHeaderNote>
+      <ns13:SignatoryCarrierAuthentication>
+       <ns13:ActualDateTime>43651T16:25:23</ns13:ActualDateTime>
+       <ns13:Signatory>.</ns13:Signatory>
+       <ns13:IssueAuthenticationLocation>
+        <ns13:Name>.</ns13:Name>
+       </ns13:IssueAuthenticationLocation>
+      </ns13:SignatoryCarrierAuthentication>
+     </ns2:BusinessHeaderDocument>
+     <ns2:MasterConsignment>
+      <ns13:IncludedTareGrossWeightMeasure unitCode="KGM">141.0</ns13:IncludedTareGrossWeightMeasure>
+      <ns13:TotalPieceQuantity>1</ns13:TotalPieceQuantity>
+      <ns13:TransportContractDocument>
+       <ns13:ID>00695132811</ns13:ID>
+      </ns13:TransportContractDocument>
+      <ns13:OriginLocation>
+       <ns13:ID>ATL</ns13:ID>
+      </ns13:OriginLocation>
+      <ns13:FinalDestinationLocation>
+       <ns13:ID>AMS</ns13:ID>
+      </ns13:FinalDestinationLocation>
+      <ns13:IncludedHouseConsignment>
+       <ns13:TotalChargePrepaidIndicator>false</ns13:TotalChargePrepaidIndicator>
+       <ns13:WeightTotalChargeAmount>0</ns13:WeightTotalChargeAmount>
+       <ns13:TotalDisbursementPrepaidIndicator>false</ns13:TotalDisbursementPrepaidIndicator>
+       <ns13:IncludedTareGrossWeightMeasure unitCode="KGM">141.0</ns13:IncludedTareGrossWeightMeasure>
+       <ns13:PackageQuantity>1</ns13:PackageQuantity>
+       <ns13:TotalPieceQuantity>1</ns13:TotalPieceQuantity>
+       <ns13:SummaryDescription>MACHINE SPARE P</ns13:SummaryDescription>
+       <ns13:ConsignorParty>
+        <ns13:Name>SANDVIK MINING CONSTRUCTION</ns13:Name>
+        <ns13:PostalStructuredAddress>
+         <ns13:PostcodeCode>24202</ns13:PostcodeCode>
+         <ns13:StreetName>15020 INDUSTRIAL PARK ROAD</ns13:StreetName>
+         <ns13:CityName>BRISTOL</ns13:CityName>
+         <ns13:CountryID schemeVersionID="second edition 2006">US</ns13:CountryID>
+         <ns13:CountrySubDivisionName>VA</ns13:CountrySubDivisionName>
+         <ns13:CountrySubDivisionID>VA</ns13:CountrySubDivisionID>
+        </ns13:PostalStructuredAddress>
+       </ns13:ConsignorParty>
+       <ns13:ConsigneeParty>
+        <ns13:Name>EINDHOVEN CENTRAL WAREHOUSE</ns13:Name>
+        <ns13:PostalStructuredAddress>
+         <ns13:PostcodeCode>5651</ns13:PostcodeCode>
+         <ns13:StreetName>C O CEVA LOGISTICS NETHERLANDS</ns13:StreetName>
+         <ns13:CityName>DE SCHAKEL 4050</ns13:CityName>
+         <ns13:CountryID schemeVersionID="second edition 2006">NL</ns13:CountryID>
+        </ns13:PostalStructuredAddress>
+       </ns13:ConsigneeParty>
+       <ns13:FreightForwarderParty>
+        <ns13:PostalStructuredAddress>
+         <ns13:CountryID schemeVersionID="second edition 2006"/>
+        </ns13:PostalStructuredAddress>
+       </ns13:FreightForwarderParty>
+       <ns13:OriginLocation>
+        <ns13:ID>ATL</ns13:ID>
+       </ns13:OriginLocation>
+       <ns13:FinalDestinationLocation>
+        <ns13:ID>AMS</ns13:ID>
+       </ns13:FinalDestinationLocation>
+       <ns13:ApplicableOriginCurrencyExchange>
+        <ns13:SourceCurrencyCode listVersionID="20070618" listAgencyID="5" listID="ISO 4217 3A">XXX</ns13:SourceCurrencyCode>
+       </ns13:ApplicableOriginCurrencyExchange>
+       <ns13:ApplicableDestinationCurrencyExchange>
+        <ns13:TargetCurrencyCode listVersionID="20070618" listAgencyID="5" listID="ISO 4217 3A">XXX</ns13:TargetCurrencyCode>
+       </ns13:ApplicableDestinationCurrencyExchange>
+       <ns13:IncludedHouseConsignmentItem>
+        <ns13:SequenceNumeric>1</ns13:SequenceNumeric>
+        <ns13:GrossWeightMeasure>141.0</ns13:GrossWeightMeasure>
+        <ns13:GrossVolumeMeasure>0</ns13:GrossVolumeMeasure>
+        <ns13:TotalChargeAmount>0</ns13:TotalChargeAmount>
+        <ns13:PieceQuantity>1</ns13:PieceQuantity>
+        <ns13:NatureIdentificationTransportCargo>
+         <ns13:Identification>MACHINE SPARE PARTS BLOCK TERM DDU EINDHOVEN EXMT 30.37 A </ns13:Identification>
+        </ns13:NatureIdentificationTransportCargo>
+        <ns13:OriginCountry>
+         <ns13:ID schemeVersionID="second edition 2006"/>
+        </ns13:OriginCountry>
+        <ns13:ApplicableFreightRateServiceCharge>
+         <ns13:CategoryCode>M</ns13:CategoryCode>
+         <ns13:ChargeableWeightMeasure unitCode="KGM">141.0</ns13:ChargeableWeightMeasure>
+         <ns13:AppliedAmount>0</ns13:AppliedAmount>
+        </ns13:ApplicableFreightRateServiceCharge>
+       </ns13:IncludedHouseConsignmentItem>
+      </ns13:IncludedHouseConsignment>
+     </ns2:MasterConsignment>
+    </ns2:HouseWaybill>
+   </Payload>
+  </lms:Service>
+ </soapenv:Body>
+</soapenv:Envelope>
